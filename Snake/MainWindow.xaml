@@ -15,9 +15,17 @@
                    HorizontalAlignment="Center"
                    Visibility="Hidden">
             A játék indításhoz a nyílgombok valamelyikével 
-            el kell indítani a kígyó fejét
+            el kell indítani a kígyó fejét!
+        </TextBlock>
+        <TextBlock x:Name="NumberOfMealsTextBlock"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="100"
+                   Text="0"
+                   FontWeight="Bold"
+                   Foreground="Gray"
+                   Visibility="Hidden">
             
         </TextBlock>
-        
     </Grid>
 </Window>

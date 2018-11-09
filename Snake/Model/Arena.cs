@@ -10,7 +10,7 @@ namespace Snake.Model
     /// <summary>
     /// A játékmenet logikáját tartalmazza  
     /// 
-    /// Ez egy osztálydefinició, ami leírha. hogy ha létrehozok egy példányt ebből az osztályból
+    /// Ez egy osztálydefinició, ami leírja, hogy ha létrehozok egy példányt ebből az osztályból
     /// akkor hogyan is kell minden példánynak működnie.
     /// Ez olyan, mint egy tervrajz.
     /// </summary>
@@ -24,7 +24,7 @@ namespace Snake.Model
         /// <param name="view">az ablak, ami létrehozta az Arena példányát</param>
         public Arena(MainWindow view)
         {
-            //hivatkozva az aosztálypéldányra, amiben vagyunk
+            //hivatkozva az osztálypéldányra, amiben vagyunk
             //így is el tudjuk érni az osztálypéldány osztályszintű változóját
             this.View = view;
             //A játék kezdetén megjelenítjük a játékszabályokat
@@ -43,6 +43,7 @@ namespace Snake.Model
                 case Key.Down:
                     //Elinditjuk a játékot: altüntetjük a játékszabályokat
                     View.GamePlayTextBlock.Visibility = System.Windows.Visibility.Hidden;
+                    View.NumberOfMealsTextBlock.Visibility = System.Windows.Visibility.Visible;
                     Console.WriteLine(e.Key);
                     break;
             }
