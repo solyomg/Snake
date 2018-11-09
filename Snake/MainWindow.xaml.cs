@@ -23,10 +23,17 @@ namespace Snake
     {
         private Arena arena;
 
+        /// <summary>
+        /// a MainWindow konstruktor függvénye.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
-            arena = new Arena();
+            //Amikor létrehozzuk a játékmenetet,
+            //átadjuk paraméterben a képernyőt
+            //a this kulcsszó az adott osztálypéldányon 
+            //belül a hivatkozás az osztálypéldányra
+            arena = new Arena(this);
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
