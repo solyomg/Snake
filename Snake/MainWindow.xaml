@@ -9,15 +9,7 @@
         KeyDown="Window_KeyDown"
         Title="MainWindow" Height="450" Width="450">
     <Grid>
-        <TextBlock x:Name="GamePlayTextBlock"
-                   Margin="60"
-                   FontSize="30"
-                   TextWrapping="Wrap"
-                   HorizontalAlignment="Center"
-                   Visibility="Hidden">
-            A játék indításhoz a nyílgombok valamelyikével 
-            el kell indítani a kígyó fejét!
-        </TextBlock>
+        
         <TextBlock x:Name="NumberOfMealsTextBlock"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
@@ -28,8 +20,7 @@
                    Visibility="Hidden">
             
         </TextBlock>
-        <Grid x:Name="ArenaGrid"
-              Visibility="Hidden">
+        <Grid x:Name="ArenaGrid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -495,5 +486,20 @@
             <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="19" />
 
         </Grid>
+        <Border x:Name="GamePlayBorder"
+                Padding="20"
+                Margin="60"
+                VerticalAlignment="Top"
+                Background="Aqua"
+                Visibility="Hidden">
+            <TextBlock x:Name="GamePlayTextBlock"
+                       
+                       FontSize="20"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center">
+                A játék indításhoz a nyílgombok valamelyikével 
+                el kell indítani a kígyó fejét!
+            </TextBlock>
+        </Border>
     </Grid>
 </Window>
